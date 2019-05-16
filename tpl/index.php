@@ -6,5 +6,7 @@ use Rain\TpL;
 );
 TpL::configure($config);
 $tpl = new TpL;
+$tpl->assign("name","Hcode");
+$tpl->assign("version",PHP_VERSION);
 $tpl->draw("index");	
 ?>
